@@ -1,0 +1,77 @@
+---
+name: Juan Manuel
+surname: Díaz López
+position: "Licensiado en Psicología"
+profilepic: "Foto_cv.jpg"
+address: "Gustavo A. Madero, CDMX"
+phone: "5533324614"
+email: "juan_dm@comunidad.unam.mx"
+github: Juan9711
+#linkedin: mariecurie
+date: "`r format(Sys.time(), '%B %Y')`"
+output: 
+  vitae::awesomecv:
+    page_total: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(readxl)
+library(tibble)
+```
+
+```{r, include=FALSE}
+# install.packages("readxl") uncomment this if you need to install the package
+library(readxl)
+readExcelSheets <- function(filename){
+  # read all sheets in .xlsx 
+  all <- readxl::excel_sheets(filename)
+  # import each sheet into a list using readxl::read_excel
+  list <- lapply(all, function(x) readxl::read_excel(filename, sheet = x))
+  # save sheet name for each sheet (list)
+  names(list) <- all
+  # breaks up list and creates a dataframe for each sheet with df names matching sheet names
+  list2env(list, envir = .GlobalEnv)
+}
+#Lectura del cv con mi info
+filename <- here::here("CV_Díaz_Juan", 
+                        "info_cv.xlsx")
+readExcelSheets(filename)
+```
+
+
+# Educación
+
+```{r}
+`Formación academica` %>% 
+    detailed_entries(what = Grado,
+                     when = Año,
+                     with = Institución,
+                     where = Donde,
+                     why = Detalles)
+```
+
+# Experiencia laboral
+
+```{r}
+`Experiencia laboral` %>% 
+    detailed_entries(what = Puesto,
+                     when = Año,
+                     with = Institución,
+                     where = Donde,
+                     why = Detalles)
+```
+
+# Formación complementaria 
+
+```{r}
+`Formación complementaria` %>% 
+    detailed_entries(what = Logro,
+                     when = Año,
+                     with = Institución,
+                     where = Donde,
+                     why = Detalles)
+```
+
+
