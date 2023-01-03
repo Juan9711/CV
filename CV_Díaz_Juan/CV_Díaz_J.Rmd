@@ -36,7 +36,7 @@ readExcelSheets <- function(filename){
 }
 #Lectura del cv con mi info
 filename <- here::here("CV_Díaz_Juan", 
-                        "info_cv.xlsx")
+                        "info_cv - copia.xlsx")
 readExcelSheets(filename)
 ```
 
