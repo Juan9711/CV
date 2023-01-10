@@ -1,9 +1,9 @@
 ---
 name: Juan Manuel
 surname: Díaz López
-position: "Licensiado en Psicología"
+position: "Licenciado en Psicología con 6 años de experiencia en investigación dentro del área educativa"
 profilepic: "Foto_cv.jpg"
-address: "Gustavo A. Madero, CDMX"
+address: "México, CDMX"
 phone: "5533324614"
 email: "juan_dm@comunidad.unam.mx"
 github: Juan9711
@@ -74,10 +74,9 @@ readExcelSheets(filename)
                      why = Detalles)
 ```
 
-# Publicaciones
-
+# Ponencias
 ```{r}
-`Publicaciones` %>% 
+`Ponencias` %>% 
     detailed_entries(what = Referencia,
                      when = Año,
                      with = Logro,
