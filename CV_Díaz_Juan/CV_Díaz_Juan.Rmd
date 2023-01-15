@@ -7,7 +7,7 @@ address: "México, CDMX"
 phone: "5533324614"
 email: "juan_dm@comunidad.unam.mx"
 github: Juan9711
-#linkedin: mariecurie
+linkedin: "https://www.linkedin.com/in/juan-manuel-díaz-lópez-5b510b262/"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::awesomecv:
@@ -52,6 +52,7 @@ readExcelSheets(filename)
                      why = Detalles)
 ```
 
+
 # Experiencia laboral
 
 ```{r}
@@ -83,3 +84,38 @@ readExcelSheets(filename)
                      where = Institución)
 ```
 
+\newpage
+
+# Anexos
+
+## *Educación*
+
+![](Anexos/Car_tit.png){width=75, height=75%}
+
+[**LINK**](https://tesiunam.dgb.unam.mx/F/2MNVUNLIDPT5Q7V34YD9J46DL8Y6R9P1SQU2KN9KVMCLKK7PN6-14675?func=find-b&local_base=TES01&request=Relaci%C3%B3n+entre+el+desempe%C3%B1o+en+tareas+de+discriminaci%C3%B3n+num%C3%A9rica%2C+temporal+y+espacial+en+diferentes+grupos+de+edad&find_code=WRD&adjacent=N&filter_code_2=WYR&filter_request_2=&filter_code_3=WYR&filter_request_3=){style="color:blue"}
+
+
+
+\newpage
+
+## *Formación complementaría*
+
+![](Anexos/Const_4.png){width=75, height=75%}
+
+![](Anexos/2019-1_28_02.png){width=75, height=75%}
+
+![](Anexos/Const_3.png){width=75, height=75%}
+
+![](Anexos/2019-1_34_08.png){width=75, height=75%}
+
+![](Anexos/Diapositiva22.png){width=75, height=75%}
+\newpage
+
+
+## *Ponencias*
+
+![](Anexos/Const_2.png){width=75, height=75%}
+
+![](Anexos/Const_1.png){width=75, height=75%}
+
+![](Anexos/Diapositiva6.png){width=75, height=75%}
